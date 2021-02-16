@@ -1,6 +1,5 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "fedora/33-cloud-base"
-  config.vm.box_version = "33.20201019.0"
+  config.vm.box = "aaronvonawesome/linux-mint-20-cinnamon"
   config.vm.hostname = "ansibletest.box"
 
   config.vm.provider :libvirt do |libvirt|
