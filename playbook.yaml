@@ -1,4 +1,5 @@
 ---
 - hosts: all
-  tasks:
-    - include: "tasks.yaml"
+  roles: 
+    - role: main
+    - role: ansible-role-nvm
