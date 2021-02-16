@@ -6,24 +6,39 @@ Also provided is a Vagrantfile (https://www.vagrantup.com/) to automate the test
 
 -----
 
-Requirements:
+## Requirements:
 - Ubuntu / Linux Mint (tested with Mint, should work on Ubuntu too)
-- non-root user with sudo permissions
-- git
+- Non-root user with sudo permissions
+- Git
 
 
-Installation:
+## Installation:
+```shell
   $ git clone https://github.com/santerj/tilde
   $ /bin/sh automint/bootstrap.sh
-
-
-All done!
-
-
+```
 
 -----
 
-Testing with Vagrant:
+The following things are installed:
+- Fish Shell
+- Visual Studio Code
+- Spotify
+- Telegram
+- WhatsApp
+- Discord
+- MongoDB
+- Robo3T
+- Postman
+- Node version manager and latest Node & npm
+- Docker
+- Latest version of Python
+
+-----
+
+## Testing with Vagrant:
+```shell
   $ git clone https://github.com/santerj/ansible
   $ cd automint
   $ vagrant up
+```
