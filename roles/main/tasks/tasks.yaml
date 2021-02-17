@@ -31,7 +31,6 @@
     state: latest
     update_cache: yes
     pkg:
-      - telegram
       - apt-transport-https
       - ca-certificates
       - curl
