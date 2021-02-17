@@ -13,9 +13,10 @@ Also provided is a Vagrantfile (https://www.vagrantup.com/) to automate the test
 
 
 ## Installation:
+First clone this repository, then
+
 ```shell
-  $ git clone https://github.com/santerj/tilde
-  $ /bin/sh automint/bootstrap.sh
+  $ /bin/sh ./automint/bootstrap.sh
 ```
 
 -----
@@ -32,13 +33,20 @@ The following things are installed:
 - Postman
 - Node version manager and latest Node & npm
 - Docker
-- Latest version of Python
+- Snap
+
+One should also note that time handling is changed with the commmand
+```shell
+  $ timedatectl set-local-rtc 1 --adjust-system-clock
+```
+This is done because I'm using a dual boot system and without the change, Mint will fuck up the clock and Windows doesn't know how to act... Silly Windows... 
 
 -----
 
 ## Testing with Vagrant:
+First clone this repository, then
+
 ```shell
-  $ git clone https://github.com/santerj/ansible
   $ cd automint
   $ vagrant up
 ```

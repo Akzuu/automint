@@ -4,6 +4,5 @@ echo "Installing Ansible..."
 sudo apt-get install ansible -y
 echo "Installing required Ansible packages..."
 ansible-galaxy collection install community.general
-ansible-galaxy install dotstrap.fish
 echo "Beginning playbook run..."
-ansible-playbook ~/Repos/automint/playbook.yaml --ask-become-pass || echo "Cleaning up..." && rm -rf ansible && echo "All done! New shell available at next login."
+ansible-playbook ~/Repos/automint/playbook.yaml --ask-become-pass || echo "Cleaning up..." && sudo rm -rf ansible && echo "All done! New shell available at next login."
