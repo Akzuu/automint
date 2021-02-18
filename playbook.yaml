@@ -1,25 +1,13 @@
 ---
-- hosts: 
-    all:
-      roles: 
-        - role: ansible-role-nvm
+- hosts: all:localhost
+  roles: 
+    - role: ansible-role-nvm
 
-        - role: main
-          become: true
-          become_method: sudo
+    - role: main
+      become: true
+      become_method: sudo
 
-        - role: fish
-          become: true
-          become_method: sudo
-    
-    localhost:
-        - role: ansible-role-nvm
-
-        - role: main
-          become: true
-          become_method: sudo
-
-        - role: fish
-          become: true
-          become_method: sudo
-
+    - role: fish
+      become: true
+      become_method: sudo
+   
