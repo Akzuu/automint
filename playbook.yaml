@@ -1,8 +1,6 @@
 ---
 - hosts: all:localhost
   roles: 
-    - role: ansible-role-nvm
-
     - role: main
       become: true
       become_method: sudo
@@ -11,3 +9,4 @@
       become: true
       become_method: sudo
    
+    - role: nvm

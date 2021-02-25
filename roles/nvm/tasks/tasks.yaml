@@ -1,0 +1,9 @@
+---
+- name: Install nvm
+  shell: curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+
+- name: Install Fisher
+  shell: curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
+
+- name: Install Fish-nvm
+  shell: fisher install FabioAntunes/fish-nvm edc/bass
